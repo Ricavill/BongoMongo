@@ -1,9 +1,12 @@
-#titulo,#navegacion{
-    background-color: #024594;
-    padding: 1% 0 1% 1%;
+.primario{
+    background-color: #024594 ;
+}
+#titulo{
+    padding: 1% 0 1%;
 }
 .iconos{
     padding: 0 0 0 5%;
 }
+
 
 
