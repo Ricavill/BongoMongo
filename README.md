@@ -16,3 +16,6 @@ Material Kit React
 https://demos.creative-tim.com/material-kit-react/?_ga=2.134983666.286705144.1604637289-2075982510.1604504204#/
 Dashboard:
 https://demos.creative-tim.com/material-dashboard/examples/dashboard.html
+
+## Diseño de la base de datos
+Se adjunta un link al EER de la base de datos: [EER de BongoMongo](https://lucid.app/invitations/accept/236b54cb-7beb-427e-b20d-ac96c4c89e34).
