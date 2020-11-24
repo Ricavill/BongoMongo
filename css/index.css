@@ -10,10 +10,28 @@
 
 
 .multiple-items{
-      width: 80%;
+      width: 81%;
       margin: 20px auto;
 
 }
+footer{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#pie{
+  position: relative;
+  height: 10em;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+#pie1{
+
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .slick-prev:before,.slick-next:before {
   color: black !important;
 }
