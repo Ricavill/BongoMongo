@@ -7,4 +7,9 @@ $('.multiple-items').slick({
   slidesToScroll: 3
 
 });
+
+$('.single-items').slick({
+  dots:true,
+  infinite:true,
+});
 });

@@ -14,9 +14,15 @@
 
 .multiple-items{
       width: 81%;
-      margin: 20px auto;
+      margin: 40px auto;
 
 }
+.multiple-items div{
+      width: 95%;
+      margin: 40px auto;
+
+}
+
 footer{
   padding: 0;
   margin: 0;
@@ -35,6 +41,50 @@ footer{
   padding: 0;
 }
 
+#ElectrodomesticosMovil{
+  display:none;
+
+}
+#TecnologiaMovil{
+  display:none;
+
+}
+
+
 .slick-prev:before,.slick-next:before {
   color: black !important;
+}
+@media only screen and (max-width: 600px)    {
+
+  .single-items{
+        width: 50%;
+        margin:40px auto;
+        align-self: center;
+
+
+
+  }
+
+  .single-items div{
+
+
+
+  }
+  #ElectrodomesticosMovil{
+    display:initial;
+
+
+  }
+  #TecnologiaMovil{
+    display:initial;
+
+  }
+
+  #Electrodomesticos{
+    display:none;
+  }
+  #Tecnologia{
+    display:none;
+  }
+
 }
