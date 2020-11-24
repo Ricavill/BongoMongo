@@ -38,8 +38,8 @@
 
     color: transparent;
     border: none;
-    outline: none;
-    background: transparent;
+    outline: red;
+    background: transparen;
 }
 .slick-prev:hover,
 .slick-prev:focus,
