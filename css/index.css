@@ -59,6 +59,7 @@ footer{
   .single-items{
         width: 50%;
         margin:40px auto;
+
         align-self: center;
 
 
@@ -72,14 +73,21 @@ footer{
   }
   #ElectrodomesticosMovil{
     display:initial;
-
-
   }
   #TecnologiaMovil{
     display:initial;
+    
 
   }
+  #ElectrodomesticosMovil div h1{
+    font-size:22px;
+    text-align: center;
+  }
+  #TecnologiaMovil div h1{
 
+    font-size:22px;
+    text-align: center;
+  }
   #Electrodomesticos{
     display:none;
   }
