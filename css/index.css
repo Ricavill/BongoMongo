@@ -2,7 +2,10 @@
     background-color: #024594 !important;
 }
 #titulo{
-    padding: 1% 0 1%;
+    padding: 1% 0 ;
+}
+.row{
+  width: 100%
 }
 .iconos{
     padding: 0 0 0 5%;
