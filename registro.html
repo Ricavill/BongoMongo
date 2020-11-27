@@ -23,29 +23,36 @@
             </div>
           </nav>
         <div class="container">
-            <div class="row ml-auto mr-auto">  
+            <div class="row mr-auto ml-auto">  
                 <div class="col-lg-6 col-md-8 ml-auto mr-auto">
                     <div class="card card-nav-tabs text-center">
                         <div class="card-header card-header-danger">
-                          Login
+                          Registro
                         </div>
                         <div class="card-body">
                             <form>
+                              <div class="row">
+                                <div class="col form-group">
+                                  <input id= "nombre" type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col form-group">
+                                  <input id= "apellido" type="text" class="form-control" placeholder="Apellido">
+                                </div>
+                              </div>
                                 <div class="form-group">
                                     <label for="correo">Correo Electronico</label>
                                     <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="abcd@hotmail.com">
-                                    <small id="emailHelp" class="form-text text-muted">No compratiremos tu correo con nadie.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="contra">Contraseña</label>
                                     <input type="password" class="form-control" id="contra" placeholder="Contraseña">
                                 </div>
                                 <div class="form-group">
-                                  <a href=""><small id="emailHelp" class="form-text text-danger"><u>Olvide mi contraseña</u></small></a>
-                                  <a href="registro.html"><small id="emailHelp" class="form-text text-dark">No tiene cuenta? Haga click aqui.</small></a>
-                                </div>
+                                  <label for="contraConfirmar">Confirmar Contraseña</label>
+                                  <input type="password" class="form-control" id="contraConfirmar" placeholder="Confirmar Contraseña">
+                              </div>
                             </form>
-                            <button type="submit" class="btn btn-primary bg-danger">Iniciar Sesion</button>
+                            <button type="submit"  onclick="window.location.href='login.html'" class="btn btn-primary bg-danger">Registrarse</button>
                         </div>
                       </div>
                 </div>

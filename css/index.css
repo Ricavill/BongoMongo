@@ -2,7 +2,7 @@
     background-color: #024594 !important;
 }
 #titulo{
-    padding: 1% 0 ;
+    padding: 1% 1% ;
 }
 .row{
   width: 100%
@@ -87,4 +87,10 @@ footer{
     display:none;
   }
 
+  h1{
+    font-size: 2rem !important;
+  }
+
+
 }
+
