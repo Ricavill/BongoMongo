@@ -60,6 +60,9 @@ footer{
 
 }
 
+div li.oculto{
+  display: none;
+}
 
 .slick-prev:before,.slick-next:before {
   color: black !important;
@@ -104,7 +107,16 @@ footer{
   div#publicidad{
     width: 100% ;
   }
+
+  div li.oculto{
+    display: inline;
+  }
   
 
 }
 
+@media only screen and (max-width: 991px) {
+  div li.oculto{
+    display: inline;
+  }
+}
