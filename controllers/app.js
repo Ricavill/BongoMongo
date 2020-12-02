@@ -37,8 +37,6 @@ app.get('/nosotros', function(request, response) {
 
 app.get('/productos', prods.catalog)
 
-app.get('/productos/test', prods.test)
-
 app.get('/auth/login', auth.login)
 app.get('/auth/register', auth.register)
 
