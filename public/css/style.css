@@ -165,3 +165,7 @@ p {
     padding-right: 2%;
     font-size: 15px;
 }
+
+div.col-lg-6.col-md-8.ml-auto.mr-auto {
+    margin-top: 15px;
+}

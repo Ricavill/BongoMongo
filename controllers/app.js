@@ -3,8 +3,13 @@ var session = require('express-session')
 var bodyParser = require('body-parser')
 var path = require('path')
 var nunjucks = require('nunjucks')
+var auth = require('./auth.js')
+var prods = require('./productos.js')
 
 var app = express();
+
+module.exports = app;
+
 app.engine('html', nunjucks.render)
 
 app.use(session({
@@ -13,13 +18,28 @@ app.use(session({
     saveUninitialized: true
 }));
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(express.static('public'))
-app.use('/scripts', express.static('node_modules'));
+app.use('/scripts', express.static('node_modules'))
 
 app.get('/', function(request, response) {
-    response.render(path.resolve('views/home/index.html'));
+    response.render(path.resolve('views/home/index.html'))
 });
+
+app.get('/contactos', function(request, response) {
+    response.render(path.resolve('views/home/contactos.html'))
+});
+
+app.get('/nosotros', function(request, response) {
+    response.render(path.resolve('views/home/nosotros.html'))
+});
+
+app.get('/productos', prods.catalog)
+
+app.get('/productos/test', prods.test)
+
+app.get('/auth/login', auth.login)
+app.get('/auth/register', auth.register)
 
 app.listen(3000);
