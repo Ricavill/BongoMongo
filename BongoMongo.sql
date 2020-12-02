@@ -1,11 +1,9 @@
 USE `bongomongo`;
-
 CREATE TABLE IF NOT EXISTS `genero` (
   `id` int auto_increment,
   `descripcion` varchar(30),
   PRIMARY KEY (`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `plataforma_usuario` (
   `id` int auto_increment,
   `username` varchar(150),
@@ -25,21 +23,18 @@ CREATE TABLE IF NOT EXISTS `plataforma_usuario` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`genero`) REFERENCES `genero`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `django_session` (
   `session_key` varchar(40),
   `session_data` longtext,
   `expire_date` datetime,
   PRIMARY KEY (`session_key`)
 );
-
 CREATE TABLE IF NOT EXISTS `django_content_type` (
   `id` int,
   `app_label` varchar(100),
   `model` varchar(100),
   PRIMARY KEY (`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `django_migrations` (
   `id` int,
   `app` varchar(255),
@@ -47,7 +42,6 @@ CREATE TABLE IF NOT EXISTS `django_migrations` (
   `applied` datetime,
   PRIMARY KEY (`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `auth_permission` (
   `id` int,
   `name` varchar(255),
@@ -56,14 +50,12 @@ CREATE TABLE IF NOT EXISTS `auth_permission` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `auth_group` (
   `id` int,
   `name` varchar(150),
   PRIMARY KEY (`id`),
   KEY `AK` (`name`)
 );
-
 CREATE TABLE IF NOT EXISTS `plataforma_usuario_groups` (
   `id` int,
   `usuario_id` int,
@@ -72,7 +64,6 @@ CREATE TABLE IF NOT EXISTS `plataforma_usuario_groups` (
   FOREIGN KEY (`usuario_id`) REFERENCES `plataforma_usuario`(`id`),
   FOREIGN KEY (`group_id`) REFERENCES `auth_group`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `plataforma_usuario_user_permissions` (
   `id` int,
   `usuario_id` int,
@@ -81,7 +72,6 @@ CREATE TABLE IF NOT EXISTS `plataforma_usuario_user_permissions` (
   FOREIGN KEY (`usuario_id`) REFERENCES `plataforma_usuario`(`id`),
   FOREIGN KEY (`permission_id`) REFERENCES `auth_permission`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `auth_group_permissions` (
   `id` int,
   `group_id` int,
@@ -90,7 +80,6 @@ CREATE TABLE IF NOT EXISTS `auth_group_permissions` (
   FOREIGN KEY (`group_id`) REFERENCES `auth_group`(`id`),
   FOREIGN KEY (`permission_id`) REFERENCES `auth_permission`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `django_admin_log` (
   `id` int,
   `action_time` datetime,
@@ -104,7 +93,6 @@ CREATE TABLE IF NOT EXISTS `django_admin_log` (
   FOREIGN KEY (`user_id`) REFERENCES `plataforma_usuario`(`id`),
   FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `documento_contable` (
   `id` int,
   `fecha_emision` date,
@@ -113,7 +101,6 @@ CREATE TABLE IF NOT EXISTS `documento_contable` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`usuario`) REFERENCES `plataforma_usuario`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `entrega` (
   `id` int auto_increment,
   `completada` tinyint,
@@ -123,13 +110,11 @@ CREATE TABLE IF NOT EXISTS `entrega` (
   FOREIGN KEY (`repartidor`) REFERENCES `plataforma_usuario`(`id`),
   FOREIGN KEY (`documento`) REFERENCES `documento_contable`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `tipo_metodo_de_pago` (
   `id` int auto_increment,
   `descripcion` varchar(30),
   PRIMARY KEY (`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `metodo_de_pago` (
   `id` int auto_increment,
   `activo` tinyint,
@@ -140,7 +125,6 @@ CREATE TABLE IF NOT EXISTS `metodo_de_pago` (
   FOREIGN KEY (`tipo`) REFERENCES `tipo_metodo_de_pago`(`id`),
   FOREIGN KEY (`usuario`) REFERENCES `plataforma_usuario`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `factura` (
   `id` int,
   `documento_contable` int,
@@ -149,13 +133,11 @@ CREATE TABLE IF NOT EXISTS `factura` (
   FOREIGN KEY (`documento_contable`) REFERENCES `documento_contable`(`id`),
   FOREIGN KEY (`metodo_de_pago`) REFERENCES `metodo_de_pago`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `categoria_producto` (
   `id` int auto_increment,
   `descripcion` varchar(30),
   PRIMARY KEY (`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `producto` (
   `id` int auto_increment,
   `nombre` varchar(100),
@@ -166,7 +148,6 @@ CREATE TABLE IF NOT EXISTS `producto` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`categoria`) REFERENCES `categoria_producto`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `stock_producto` (
   `id` int auto_increment,
   `cantidad` int,
@@ -174,7 +155,6 @@ CREATE TABLE IF NOT EXISTS `stock_producto` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`producto`) REFERENCES `producto`(`id`)
 );
-
 CREATE TABLE IF NOT EXISTS `detalle_producto` (
   `id` int auto_increment,
   `cantidad` int,

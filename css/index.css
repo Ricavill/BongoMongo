@@ -1,174 +1,167 @@
-.primario{
+.primario {
     background-color: #024594 !important;
 }
-#titulo{
-    padding: 1% 1% ;
+
+#titulo {
+    padding: 1% 1%;
 }
-.row{
-  width: 100%
+
+.row {
+    width: 100%
 }
-.iconos{
+
+.iconos {
     padding: 0 0 0 5%;
 }
 
-div#publicidad{
-  width: 75% ;
+div#publicidad {
+    width: 75%;
 }
 
-.waltmaysa{
-  width: 180px;
-  height: 8px;
-  margin-right: 0%;
-  padding-right: 0%;
+.waltmaysa {
+    width: 180px;
+    height: 8px;
+    margin-right: 0%;
+    padding-right: 0%;
 }
 
-
-.multiple-items{
-      width: 81%;
-      margin: 40px auto;
-
-}
-.multiple-items div{
-      width: 95%;
-      margin: 40px auto;
-
+.multiple-items {
+    width: 81%;
+    margin: 40px auto;
 }
 
-footer{
-  padding: 0;
-  margin: 0;
-  border: 0;
+.multiple-items div {
+    width: 95%;
+    margin: 40px auto;
 }
 
-
-#ElectrodomesticosMovil{
-  display:none;
-
-}
-#TecnologiaMovil{
-  display:none;
-
+footer {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-div li.oculto{
-  display: none;
+#ElectrodomesticosMovil {
+    display: none;
 }
 
-.slick-prev:before,.slick-next:before {
-  color: black !important;
+#TecnologiaMovil {
+    display: none;
 }
 
-p{
-  word-wrap: break-word;
+div li.oculto {
+    display: none;
 }
 
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
 
-.px-auto{
-  margin-left:auto;
-  margin-right: auto;
-  margin-top: 3%;
-  width: 80%;
+p {
+    word-wrap: break-word;
+}
+
+.px-auto {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 80%;
 }
 
 @media only screen and (max-width: 991px) {
-  div li.oculto{
-    display: inline;
-  }
+    div li.oculto {
+        display: inline;
+    }
 }
-@media only screen and (max-width: 600px)    {
 
-  .single-items{
+@media only screen and (max-width: 600px) {
+    .single-items {
         width: 50%;
-        margin:40px auto;
-
+        margin: 40px auto;
         align-self: center;
-
-
-
-  }
-
-  .single-items div{
-
-
-
-  }
-  #ElectrodomesticosMovil{
-    display:initial;
-  }
-  #TecnologiaMovil{
-    display:initial;
-    
-
-  }
-  #ElectrodomesticosMovil div h1{
-    font-size:22px;
-    text-align: center;
-  }
-  #TecnologiaMovil div h1{
-
-    font-size:22px;
-    text-align: center;
-  }
-  #Electrodomesticos{
-    display:none;
-  }
-  #Tecnologia{
-    display:none;
-  }
-
-  h1{
-    font-size: 2rem !important;
-  }
-
-  div#publicidad{
-    width: 100% ;
-  }
-
-  div li.oculto{
-    display: inline;
-  }
-
-
+    }
+    .single-items div {}
+    #ElectrodomesticosMovil {
+        display: initial;
+    }
+    #TecnologiaMovil {
+        display: initial;
+    }
+    #ElectrodomesticosMovil div h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    #TecnologiaMovil div h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    #Electrodomesticos {
+        display: none;
+    }
+    #Tecnologia {
+        display: none;
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+    div#publicidad {
+        width: 100%;
+    }
+    div li.oculto {
+        display: inline;
+    }
 }
-#pie{
-  position: relative;
-  height: 100%;
-  bottom: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-#pie1{
 
-  margin-bottom: 0;
-  padding: 0;
+#pie {
+    position: relative;
+    height: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
-#pie{
-  padding-top: 1%;
-  padding-bottom: 10%;
+
+#pie1 {
+    margin-bottom: 0;
+    padding: 0;
 }
-#pie #contactos{
-  display:grid;
-  grid-template-columns:25% 25% 25% 25%;
-  grid-template-rows: 30% 50%;
-  padding-left: 20%;
+
+#pie {
+    padding-top: 1%;
+    padding-bottom: 10%;
 }
-#redes-sociales p,#Informacion p, #quick a, #Informacion a{
-  font-size: 15px;
+
+#pie #contactos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 30% 50%;
+    padding-left: 20%;
 }
-#redes-sociales img{
-  width: 10%;
-  padding-right: 2%;
-  font-size: 15px;
+
+#redes-sociales p,
+#Informacion p,
+#quick a,
+#Informacion a {
+    font-size: 15px;
 }
-#Informacion img{
-  width: 10%;
-  padding-right: 2%;
+
+#redes-sociales img {
+    width: 10%;
+    padding-right: 2%;
+    font-size: 15px;
 }
-#Informacion p{
-  margin: 0;
+
+#Informacion img {
+    width: 10%;
+    padding-right: 2%;
 }
-#tarjetas img{
-  width: 15%;
-  padding-right: 2%;
-  font-size: 15px;
+
+#Informacion p {
+    margin: 0;
+}
+
+#tarjetas img {
+    width: 15%;
+    padding-right: 2%;
+    font-size: 15px;
 }

@@ -1,8 +1,8 @@
-cargarNoticias=()=>{
-  fetch()
+cargarNoticias = () => {
+    fetch()
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  cargarNoticias();
+    cargarNoticias();
 
 })
