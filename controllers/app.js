@@ -16,6 +16,7 @@ app.use(session({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 app.use(express.static('public'))
+app.use('/scripts', express.static('node_modules'));
 
 app.get('/', function(request, response) {
     response.render(path.resolve('views/home/index.html'));
