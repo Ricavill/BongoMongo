@@ -1,9 +1,11 @@
 var express = require('express')
 var session = require('express-session')
 var bodyParser = require('body-parser')
-var path = require('path');
+var path = require('path')
+var nunjucks = require('nunjucks')
 
 var app = express();
+app.engine('html', nunjucks.render)
 
 app.use(session({
     secret: 'secret',
@@ -16,7 +18,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.get('/', function(request, response) {
-    response.sendFile(path.resolve('views/home/index.html'));
+    response.render(path.resolve('views/home/index.html'));
 });
 
 app.listen(3000);
