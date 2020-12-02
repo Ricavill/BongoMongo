@@ -1,0 +1,39 @@
+{% extends "../layouts/head.html" %} {% block body %}
+
+<body style="background-color: #024594;">
+    {% include "../partials/header.html" %}
+    <div class="container">
+        <div class="row ml-auto mr-auto">
+            <div class="col-lg-6 col-md-8 ml-auto mr-auto">
+                <div class="card card-nav-tabs text-center">
+                    <div class="card-header card-header-danger">
+                        Login
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="correo">Correo Electronico</label>
+                                <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="abcd@mail.com">
+                                <small id="emailHelp" class="form-text text-muted">No compratiremos tu correo con nadie.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="contra">Contraseña</label>
+                                <input type="password" class="form-control" id="contra" placeholder="Contraseña">
+                            </div>
+                            <div class="form-group">
+                                <a href=""><small id="emailHelp" class="form-text text-danger"><u>Olvide mi contraseña</u></small></a>
+                                <a href="/auth/register"><small id="emailHelp" class="form-text text-dark">No tiene cuenta? Haga click
+                    aqui.</small></a>
+                            </div>
+                        </form>
+                        <button type="submit" class="btn btn-primary bg-danger">Iniciar Sesion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "../partials/footer.html" %} {% include "../partials/globalScripts.html" %}
+
+</body>
+{% endblock %}

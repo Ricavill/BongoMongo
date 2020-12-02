@@ -1,0 +1,53 @@
+{% extends "../layouts/head.html" %} {% block body %}
+
+<body>
+    {% include "../partials/header.html" %}
+    <div class="jumbotron">
+        <h1 class="display-4">Slogan</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    </div>
+    <div class="row m-0">
+        <div class="info">
+            <h4 class="info-title">¿Quiénes Somos?</h4>
+            <p class="text-dark">Etiam porta semper mauris, et scelerisque ligula malesuada vel. Proin neque ex, consequat ac dignissim quis, condimentum id magna. Phasellus at felis in libero cursus accumsan at sit amet dui. Sed sagittis quam ut commodo vulputate. Ut nec
+                scelerisque turpis, in rutrum leo. Fusce at odio convallis, pulvinar libero sed, volutpat tellus. Aliquam at nulla vel ex dapibus sagittis. Nullam aliquam varius nibh nec elementum. Maecenas hendrerit turpis ut pulvinar commodo.</p>
+        </div>
+        <div class="info">
+            <h4 class="info-title">Servicios</h4>
+            <ul class="pl-3">
+                <li>Hacemos Delivery las 24 horas del dia y los 7 dias de la semana.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit, elit ac convallis pharetra, felis augue finibus elit, cursus posuere risus felis eget quam.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit, elit ac convallis pharetra, felis augue finibus elit, cursus posuere risus felis eget quam.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit, elit ac convallis pharetra, felis augue finibus elit, cursus posuere risus felis eget quam.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="w-100 col">
+            <h4 class="info-title">Desarrolladores</h4>
+        </div>
+        <div class="row p-3">
+            <div class="col-sm">
+                <h5 class="info-title">Walter Santaruz</h5>
+                <p>Descripcion</p>
+            </div>
+            <div class="col-sm">
+                <h5 class="info-title">Ricardo Villacis</h5>
+                <p>Descripcion</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm">
+                <h5 class="info-title">Evelyn Mejia</h5>
+                <p>Descripcion</p>
+            </div>
+            <div class="col-sm">
+                <h5 class="info-title">Carlos Flores</h5>
+                <p>Descripcion</p>
+            </div>
+        </div>
+    </div>
+
+    {% include "../partials/footer.html" %} {% include "../partials/globalScripts.html" %}
+
+</body>
+{% endblock %}
