@@ -23,4 +23,6 @@ intro.setOptions({
         }
     ]
 })
-intro.start();
+let iniciar = () => {
+    intro.start();
+}
