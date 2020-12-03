@@ -6,6 +6,7 @@
     <!-- Trabajar aquí lo que haya que agregar -->
     <div id="tarjetaformulario" class="card card-nav-tabs">
         <div id="formulariodiv" class="card-body">
+          <h1>Contáctenos</h1>
           <form>
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -24,7 +25,7 @@
       <input type="text" class="form-control" id="inputCity">
     </div>
     <div class="form-group col-md-3">
-      <label for="inputState">State</label>
+      <label for="inputState">Ciudad</label>
       <select id="inputState" class="form-control">
         <option selected>Guayaquil</option>
         <option>Quito</option>
@@ -33,11 +34,16 @@
     </div>
     <div class="form-group">
     <label class="label-control">Datetime Picker</label>
-    <input type="text" class="form-control datetimepicker" value="10/05/2016"/>
+    <input type=date class="form-control" />
 </div>
   </div>
 
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <div class="form-group">
+    <label for="inputAddress">Mensaje</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
         </div>
       </div>
