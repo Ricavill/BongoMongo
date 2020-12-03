@@ -19,7 +19,15 @@ $(function() {
      fetch("/assets/json/noticias.json")
      .then((response)=>response.json())
      .then((str)=>{
-       for()
+       noticias=str.noticias;
+       for(let i=0;i<noticias.length;i++){
+         carrusel=document.getElementById('publicidad');
+         dentrocarrusel=carrusel.getElementsByClassName('carousel-inner')[0];
+         itemcarrusel=dentrocarrusel.getElementsByClassName("carousel-item")[i];
+         imagen=itemcarrusel.getElementsByTagName('img')[0];
+         imagen.src=noticias[i].urlfoto;
+       }
+
 
      })
  }
