@@ -1,5 +1,6 @@
+var PORT = process.env.PORT || 3000
 var express = require('express')
-var session = require('express-session')
+    // var session = require('express-session')
 var bodyParser = require('body-parser')
 var path = require('path')
 var nunjucks = require('nunjucks')
@@ -12,11 +13,11 @@ module.exports = app;
 
 app.engine('html', nunjucks.render)
 
-app.use(session({
-    secret: 'secret',
-    resave: true,
-    saveUninitialized: true
-}));
+// app.use(session({
+//     secret: 'secret',
+//     resave: true,
+//     saveUninitialized: true
+// }));
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -58,6 +59,4 @@ app.get('/admin/components', function(request, response) {
     response.render(path.resolve('views/admin/components.html'))
 });
 
-
-
-app.listen(3000);
+app.listen(PORT);
