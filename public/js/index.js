@@ -14,6 +14,7 @@ $(function() {
 });
 
 
+
 // cargarNoticias = () => {
 //     fetch()
 // }
