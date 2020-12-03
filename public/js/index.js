@@ -15,11 +15,16 @@ $(function() {
 
 
 
-// cargarNoticias = () => {
-//     fetch()
-// }
+ cargarNoticias = () => {
+     fetch("/assets/json/noticias.json")
+     .then((response)=>response.json())
+     .then((str)=>{
+       for()
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     cargarNoticias();
+     })
+ }
 
-// })
+ document.addEventListener('DOMContentLoaded', function() {
+     cargarNoticias();
+
+ })
