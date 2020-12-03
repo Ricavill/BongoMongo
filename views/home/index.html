@@ -1,4 +1,5 @@
 {% extends "../layouts/head.html" %} {% block css %} {{ super() }}
+<link rel="stylesheet" type="text/css" href="/scripts/intro.js/introjs.css"
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
 <!-- Add the slick-theme.css if you want default styling -->
@@ -8,7 +9,7 @@
     {% include "../partials/header.html" %}
 
     <div class="px-auto">
-        <div id="publicidad" class="carousel slide mx-auto" data-ride="carousel">
+        <div id="publicidad" class="carousel slide mx-auto" data-ride="carousel" data-hint="Hola xd">
             <ol class="carousel-indicators">
                 <li data-target="#publicidad" data-slide-to="0" class="active"></li>
                 <li data-target="#publicidad" data-slide-to="1"></li>
@@ -283,6 +284,7 @@
 
 
     {% include "../partials/footer.html" %} {% include "../partials/globalScripts.html" %}
-
+    <script src="/scripts/intro.js/intro.js"></script>
+    <script src="/js/introducion.js"></script>
 </body>
 {% endblock %}
