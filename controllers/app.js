@@ -20,7 +20,7 @@ app.use(session({
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-//app.use(express.static(__dirname + '/public'));
+    //app.use(express.static(__dirname + '/public'));
 
 app.use(express.static('public'))
 app.use('/scripts', express.static('node_modules'))
@@ -60,4 +60,4 @@ app.get('/admin/components', function(request, response) {
 
 
 
-app.listen(8080);
+app.listen(3000);
