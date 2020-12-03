@@ -35,9 +35,13 @@ app.get('/nosotros', function(request, response) {
     response.render(path.resolve('views/home/nosotros.html'))
 });
 
+app.get('/admin', function(request, response) {
+    response.render(path.resolve('views/admin/index.html'))
+});
+
 app.get('/productos', prods.catalog)
 
 app.get('/auth/login', auth.login)
 app.get('/auth/register', auth.register)
 
-app.listen(3000);
+app.listen(8080);
