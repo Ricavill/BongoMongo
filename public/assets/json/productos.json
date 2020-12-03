@@ -1,39 +1,69 @@
 {
-    "productos": [{
-            "nombre": "Sanduchera Panini",
-            "tipo": "Electrodomesticos",
-            "precio": 65,
-            "imagenurl": "img\productos\Sanducherapanini.jpeg"
-        },
-        {
-            "nombre": "Televisor 55' TCL",
-            "tipo": "Electrodomesticos",
-            "precio": 625,
-            "imageurl": "img\productos\Tcl55.jpeg"
-        },
-        {
-            "nombre": "Televisor 55'Samsung",
-            "tipo": "Electrodomesticos",
-            "precio": 765,
-            "imageurl": "img\productos\Samsung55.jpeg"
-        },
-        {
-            "nombre": "Freidora de Aire 1.5 lt",
-            "tipo": "Electrodomesticos",
-            "precio": 65,
-            "imageurl": "img\productos\Freidoraaire.jpeg"
-        },
-        {
-            "nombre": "Procesador de Comida Home",
-            "tipo": "Electrodomesticos",
-            "precio": 65,
-            "imageurl": "img\productos\Procesadorcomida.jpeg"
-        },
-        {
-            "nombre": "Cocina de 4 Ornillas con Grill Mabe",
-            "tipo": "Electrodomesticos",
-            "precio": 370,
-            "imageurl": "img\productos\Cocinamabe.jpeg"
-        }
+    "productos":[
+                  {
+                    "nombre":"Sanduchera Panini",
+                    "tipo":"Tecnologias",
+                    "precio":65,
+                    "imagenurl":"/assets/images/productos/Sanducherapanini.jpeg"
+  
+                  },
+                  {
+                    "nombre":"Televisor 55' TCL",
+                    "tipo":"Electrodomesticos",
+                    "precio":625,
+                    "imageurl":"/assets/images/productos/Tcl55.jpeg"
+                  },
+                  {
+                    "nombre":"Televisor 55'Samsung",
+                    "tipo":"Electrodomesticos",
+                    "precio":765,
+                    "imageurl":"/assets/images/productos/Samsung55.jpeg"
+                  },
+                  {
+                    "nombre":"Freidora de Aire 1.5 lt",
+                    "tipo":"Tecnologias",
+                    "precio":65,
+                    "imageurl":"/assets/images/productos/Freidoraaire.jpeg"
+                  },
+                  {
+                    "nombre":"Procesador de Comida Home",
+                    "tipo":"Tecnologias",
+                    "precio":65,
+                    "imageurl":"/assets/images/productos/Procesadorcomida.jpeg"
+                  },
+                  {
+                    "nombre":"Cocina de 4 Ornillas con Grill Mabe",
+                    "tipo":"Electrodomesticos",
+                    "precio":370,
+                    "imageurl":"/assets/images/productos/Cocinamabe.jpeg"
+                  },
+                  {
+                      "nombre":"Radio de Carro",
+                      "tipo":"Tecnologias",
+                      "precio":89,
+                      "imagenurl":"/assets/images/productos/RadioCarro.jpeg"
+                  },
+                  {
+                      "nombre":"Aire Acondicionado USA AIR 24.000 ECOLOGICO",
+                      "tipo":"Electrodomesticos",
+                      "precio":499,
+                      "imagenurl":"/assets/images/productos/UsaAir12.jpeg"
+                  },
+                  {
+                    "nombre":"Aire Acondicionado USA AIR 12.000 ECOLOGICO",
+                    "tipo":"Electrodomesticos",
+                    "precio":245,
+                    "imagenurl":"/assets/images/productos/UsaAir24.jpeg"
+                  },
+                  {
+                    "nombre":"Ventilador de 15' Pedestal",
+                    "tipo":"Electrodomesticos",
+                    "precio": 25,
+                    "imagenurl":"/assets/images/productos/Ventilador15.jpeg"
+                  }
+
+  
     ]
-}
+  
+  
+  }
