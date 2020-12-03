@@ -20,6 +20,8 @@ app.use(session({
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+//app.use(express.static(__dirname + '/public'));
+
 app.use(express.static('public'))
 app.use('/scripts', express.static('node_modules'))
 
@@ -37,6 +39,14 @@ app.get('/nosotros', function(request, response) {
 
 app.get('/admin', function(request, response) {
     response.render(path.resolve('views/admin/index.html'))
+});
+
+app.get('/admin/commerce', function(request, response) {
+    response.render(path.resolve('views/admin/index.html'))
+});
+
+app.get('/admin/analytics', function(request, response) {
+    response.render(path.resolve('views/admin/analytics.html'))
 });
 
 app.get('/productos', prods.catalog)
