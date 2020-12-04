@@ -36,46 +36,31 @@ $(function() {
    .then((response)=>response.json())
    .then((str)=>{
      productos=str.productos;
+    let contador = 3;
+    for(let producto of productos){
+      if(producto.tipo.includes("Electro")){
+        let electrodomesticosLista = document.getElementsByClassName("Electro")[0].getElementsByClassName("multiple-items")[0].getElementsByTagName("div")[0].getElementsByClassName("card")[contador]
+        let electrodomesticosListaMovil = document.getElementsByClassName("Electro")[1].getElementsByClassName("single-items")[0].getElementsByTagName("div")[0].getElementsByClassName("card")[contador]
+        
+        let cardImg1 = electrodomesticosLista.getElementsByTagName("img")[0]
+        let cardImg2 = electrodomesticosListaMovil.getElementsByTagName("img")[0]
+        cardImg1.src = producto.imageurl
+        cardImg2.src = producto.imageurl
 
-     let k=0;
-     let i=0;
+        electrodomesticosLista.getElementsByTagName("p")[0].textContent = producto.nombre + " $" + producto.precio
+        electrodomesticosListaMovil.getElementsByTagName("p")[0].textContent = producto.nombre + " $" + producto.precio
 
-     while(k<5){
-       if(productos[i].tipo=="Electrodomesticos"){
-         electros=document.getElementsByClassName("Electro")
-         for(electro of electros){
-           let electomulti;
-           if(electro.id=="Electrodomesticos"){
-             electromulti=electro.getElementsByClassName("multiple-items")[0];
-             console.log("Aqui multiple")
-           }
-           else{
-             electromulti=electro.getElementsByClassName("single-items")[0];
-             console.log("Aqui single")
-           }
-           divinterno=electromulti.getElementsByTagName("div")[0];
+        contador++;
+      }
 
+    }
 
-           let electrocard=divinterno.getElementsByClassName("card")[k];
-           let cardimg=electrocard.getElementsByTagName("img")[0];
-           cardimg.src=productos[i].imageurl;
-
-         }
-         k++;
-       }
-       if(i>=productos.length){
-         i=0;
-       }
-       else{
-         i++;
-       }
-
-     }
    })
    .catch((error)=>{
      console.log("Error: "+error)
    })
  }
+
 
 
  document.addEventListener('DOMContentLoaded', function() {

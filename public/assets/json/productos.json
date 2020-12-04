@@ -41,25 +41,25 @@
                       "nombre":"Radio de Carro",
                       "tipo":"Tecnologias",
                       "precio":89,
-                      "imagenurl":"/assets/images/productos/RadioCarro.jpeg"
+                      "imageurl":"/assets/images/productos/RadioCarro.jpeg"
                   },
                   {
                       "nombre":"Aire Acondicionado USA AIR 24.000 ECOLOGICO",
                       "tipo":"Electrodomesticos",
                       "precio":499,
-                      "imagenurl":"/assets/images/productos/UsaAir12.jpeg"
+                      "imageurl":"/assets/images/productos/UsaAir12.jpeg"
                   },
                   {
                     "nombre":"Aire Acondicionado USA AIR 12.000 ECOLOGICO",
                     "tipo":"Electrodomesticos",
                     "precio":245,
-                    "imagenurl":"/assets/images/productos/UsaAir24.jpeg"
+                    "imageurl":"/assets/images/productos/UsaAir24.jpeg"
                   },
                   {
                     "nombre":"Ventilador de 15' Pedestal",
                     "tipo":"Electrodomesticos",
                     "precio": 25,
-                    "imagenurl":"/assets/images/productos/Ventilador15.jpeg"
+                    "imageurl":"/assets/images/productos/Ventilador15.jpeg"
                   }
 
   
