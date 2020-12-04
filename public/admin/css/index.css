@@ -1,0 +1,18 @@
+.app_brand {
+    position: relative;
+    display: block;
+    background-color: #024594 !important;
+}  
+.app_brand a{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 75px;
+      max-height: 75px;
+      margin: auto;
+}
+      
+.table-responsive {
+     display: block !important; 
+}
