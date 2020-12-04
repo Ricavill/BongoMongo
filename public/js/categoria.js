@@ -46,6 +46,22 @@ cargarCategorias = () => {
         })
 }
 
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function getUrlParam(parameter, defaultvalue) {
+    var urlparameter = defaultvalue;
+    if (window.location.href.indexOf(parameter) > -1) {
+        urlparameter = getUrlVars()[parameter];
+    }
+    return urlparameter;
+}
+
 cargarProductos = () => {
     fetch("/assets/json/productos.json")
         .then((response) => response.json())
@@ -59,6 +75,13 @@ cargarProductos = () => {
                 if (category.localeCompare("todos")) {
                     if (productFields.tipo.toLowerCase().substring(0, 5).localeCompare(category)) {
                         continue
+                    }
+                } else {
+                    let nombre = getUrlParam("nombre", "ninguno")
+                    if (nombre.localeCompare("ninguno")) {
+                        if (productFields.nombre.toLowerCase().indexOf(nombre.toLowerCase()) == -1) {
+                            continue
+                        }
                     }
                 }
 
