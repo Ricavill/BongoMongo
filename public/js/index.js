@@ -1,7 +1,7 @@
 $(function() {
     $('.multiple-items').slick({
         dots: true,
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 3
 
@@ -9,7 +9,7 @@ $(function() {
 
     $('.single-items').slick({
         dots: true,
-        infinite: true,
+        infinite: false,
     });
 });
 
@@ -36,7 +36,7 @@ $(function() {
    .then((response)=>response.json())
    .then((str)=>{
      productos=str.productos;
-    let contador = 3;
+    let contador = 0;
     for(let producto of productos){
       if(producto.tipo.includes("Electro")){
         let electrodomesticosLista = document.getElementsByClassName("Electro")[0].getElementsByClassName("multiple-items")[0].getElementsByTagName("div")[0].getElementsByClassName("card")[contador]
@@ -67,7 +67,7 @@ $(function() {
   .then((response)=>response.json())
   .then((str)=>{
     productos=str.productos;
-   let contador = 3;
+   let contador = 0;
    for(let producto of productos){
      if(producto.tipo.includes("Tecno")){
        console.log(document.getElementsByClassName("Tecno")[0].getElementsByClassName("multiple-items")[0].getElementsByTagName("div")[0].getElementsByClassName("card"))
