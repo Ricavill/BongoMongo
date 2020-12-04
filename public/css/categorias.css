@@ -1,0 +1,226 @@
+.categories *,
+.products * {
+    box-sizing: content-box;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.45vw 0vw;
+    box-sizing: content-box;
+}
+
+.categoryCard {
+    display: grid;
+    grid-template-columns: 3.25fr;
+    grid-template-rows: 3.25fr 1.25fr;
+    gap: 0px 0px;
+    grid-template-areas: "catImg""catName";
+    width: 9.42vw;
+    height: 13.04vw;
+    max-width: 9.42vw;
+    max-height: 13.04vw;
+    margin: 0vw 0.725vw;
+    box-sizing: content-box;
+}
+
+.catImg {
+    width: 100%;
+    height: 100%;
+    grid-area: catImg;
+    max-width: 9.42vw;
+    max-height: 9.42vw;
+    border-radius: 100%;
+    background-color: #F5F5F5;
+}
+
+.catImgC {
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+    object-fit: cover;
+    max-width: 9.42vw;
+    max-height: 9.42vw;
+    border-radius: 100%;
+}
+
+.catName {
+    text-align: center;
+    grid-area: catName;
+    max-width: 7.25vw;
+    max-height: 4.73vw;
+    line-height: 1.16vw;
+    font-size: 0.87vw;
+    margin: 0% 11.5%;
+}
+
+
+/****************************************************/
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.75vw 0vw;
+}
+
+.productCard {
+    display: grid;
+    grid-template-columns: 3.7fr;
+    grid-template-rows: 4.5fr 2.4fr;
+    gap: 0px 0px;
+    grid-template-areas: "prodImg" "prodInfo";
+    width: 10.725vw;
+    height: 20vw;
+    max-width: 10.725vw;
+    max-height: 20vw;
+    margin: 0.2899vw 0.1449vw;
+    box-sizing: content-box;
+}
+
+.prodImg {
+    grid-area: prodImg;
+    width: 10.725vw;
+    height: 13.04vw;
+    max-width: 10.725vw;
+    max-height: 13.04vw;
+    background-color: #F5F5F5;
+}
+
+.prodImgC {
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    object-fit: cover;
+    max-width: 10.725vw;
+    max-height: 10.725vw;
+}
+
+.prodInfo {
+    display: grid;
+    grid-template-columns: 3.7fr;
+    grid-template-rows: 0.7fr 1.05fr 0.65fr;
+    gap: 0px 0px;
+    grid-template-areas: "price" "name" "rating";
+    grid-area: prodInfo;
+    background-color: #FAFAFA;
+    text-align: center;
+    max-width: 10.725vw;
+    max-height: 6.9565vw;
+}
+
+.price {
+    display: flex;
+    align-content: center;
+    grid-area: price;
+    max-width: 10.725vw;
+    max-height: 2.02899vw;
+}
+
+.priceP {
+    margin: auto;
+    max-width: 10.725vw;
+    max-height: 2.02899vw;
+    box-sizing: border-box;
+    font-size: 0.8695vw;
+}
+
+.name {
+    grid-area: name;
+    max-width: 10.725vw;
+    max-height: 3.0434vw;
+    text-align: left;
+}
+
+.nameP {
+    padding-left: 1.0869vw;
+    max-width: 10.725vw;
+    max-height: 3.0434vw;
+    box-sizing: border-box;
+    font-size: 0.7246vw;
+    line-height: 1.159vw;
+}
+
+.rating {
+    grid-area: rating;
+    max-width: 10.725vw;
+    max-height: 1.884vw;
+}
+
+@media only screen and (max-width: 1045px) {
+    .categories {
+        margin: 2.552vw 0vw;
+    }
+    .categoryCard {
+        width: 16.5792vw;
+        height: 22.9504vw;
+        max-width: 16.5792vw;
+        max-height: 22.9504vw;
+        margin: 0vw 1.276vw;
+    }
+    .catImg {
+        max-width: 16.5792vw;
+        max-height: 16.5792vw;
+    }
+    .catImgC {
+        max-width: 16.5792vw;
+        max-height: 16.5792vw;
+    }
+    .catName {
+        max-width: 12.76vw;
+        max-height: 8.3248vw;
+        line-height: 2.0416vw;
+        font-size: 1.5312vw;
+    }
+    /*****************************************************/
+    .products {
+        margin: 1.32vw 0vw;
+    }
+    .productCard {
+        width: 18.86725vw;
+        height: 35.2vw;
+        max-width: 18.86725vw;
+        max-height: 35.2vw;
+        margin: 0.5102vw 0.255vw;
+    }
+    .prodImg {
+        width: 18.86725vw;
+        height: 22.9504vw;
+        max-width: 18.86725vw;
+        max-height: 22.9504vw;
+    }
+    .prodImgC {
+        max-width: 18.86725vw;
+        max-height: 18.86725vw;
+    }
+    .prodInfo {
+        max-width: 18.86725vw;
+        max-height: 12.2434vw;
+    }
+    .price {
+        max-width: 18.86725vw;
+        max-height: 3.5710vw;
+    }
+    .priceP {
+        padding-left: 1.9129vw;
+        max-width: 18.86725vw;
+        max-height: 3.5710vw;
+        font-size: 1.5303vw;
+    }
+    .name {
+        max-width: 18.86725vw;
+        max-height: 5.3564vw;
+    }
+    .nameP {
+        padding-left: 1.9129vw;
+        max-width: 18.86725vw;
+        max-height: 5.3564vw;
+        font-size: 1.27529vw;
+        line-height: 2.0398vw;
+    }
+    .rating {
+        max-width: 18.86725vw;
+        max-height: 3.31584vw;
+    }
+}

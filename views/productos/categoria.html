@@ -1,0 +1,15 @@
+{% extends "../layouts/head.html" %} {% block css %} {{ super() }}
+<link rel="stylesheet" type="text/css" href="/css/categorias.css"> {% endblock %} {% block body %}
+
+<body>
+    {% include "../partials/header.html" %}
+    <div class="categories">
+    </div>
+    <div class="products">
+    </div>
+
+    {% include "../partials/footer.html" %}
+    <script src="/js/categoria.js"></script>
+    {% include "../partials/globalScripts.html" %}
+</body>
+{% endblock %}
