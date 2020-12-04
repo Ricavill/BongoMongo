@@ -2,6 +2,6 @@
 
 var path = require('path')
 
-exports.catalog = function(req, res) {
-    res.render(path.resolve('views/productos/productos.html'))
+exports.categoria = function(req, res) {
+    res.render(path.resolve('views/productos/categoria.html'))
 }

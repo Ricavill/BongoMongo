@@ -40,7 +40,7 @@ app.get('/nosotros', function(request, response) {
     response.render(path.resolve('views/home/nosotros.html'))
 });
 
-app.get('/productos', prods.catalog)
+app.get('/productos/:categoria', prods.categoria)
 
 app.get('/auth/login', auth.login)
 app.get('/auth/register', auth.register)

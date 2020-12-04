@@ -1,0 +1,15 @@
+{
+    "categorias": [{
+            "nombre": "Todos",
+            "img": "/assets/svg/LogoPeque.svg"
+        },
+        {
+            "nombre": "Electrodomésticos",
+            "img": "/assets/images/productos/Cocinamabe.jpeg"
+        },
+        {
+            "nombre": "Tecnología",
+            "img": "/assets/images/productos/RadioCarro.jpeg"
+        }
+    ]
+}

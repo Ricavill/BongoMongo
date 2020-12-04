@@ -1,15 +1,15 @@
 {
     "noticias": [{
             "nombre": "noticias 1",
-            "urlfoto": "img\\noticias\\noticia1.jpeg"
+            "urlfoto": "/assets/images/noticias/noticia1.jpeg"
         },
         {
             "nombre": "noticias 2",
-            "urlfoto": "img\\noticias\\noticia2.jpeg"
+            "urlfoto": "/assets/images/noticias/noticia2.jpeg"
         },
         {
             "nombre": "noticias 3",
-            "urlfoto": "img\\noticias\\noticia3.jpeg"
+            "urlfoto": "/assets/images/noticias/noticia3.jpeg"
         }
     ]
 }
