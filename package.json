@@ -7,10 +7,6 @@
         "start": "node controllers/app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [
-        "example",
-        "heroku"
-    ],
     "author": "BongoMongo",
     "license": "ISC",
     "dependencies": {
@@ -28,8 +24,5 @@
         "nunjucks": "^3.2.2",
         "sleek-dashboard": "^1.0.0-beta.5",
         "slick-carousel": "^1.8.1"
-    },
-    "engines": {
-        "node": "14.15.1"
     }
 }
