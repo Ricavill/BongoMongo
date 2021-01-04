@@ -40,7 +40,7 @@ app.get('/nosotros', function(request, response) {
     response.render(path.resolve('views/home/nosotros.html'))
 });
 
-app.get('/productos', prods.catalog)
+app.get('/productos/:categoria', prods.categoria)
 
 app.get('/auth/login', auth.login)
 app.get('/auth/register', auth.register)
@@ -54,7 +54,5 @@ app.get('/admin/commerce', admin.commerce)
 app.get('/admin/analytics', admin.analytics)
 
 app.get('/admin/components', admin.components)
-app.get('/admin/profile', admin.profile)
-
 
 app.listen(PORT);
